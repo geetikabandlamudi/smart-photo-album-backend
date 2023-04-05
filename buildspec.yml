@@ -4,7 +4,7 @@ phases:
   build:
     commands:      
       - zip -g index-photos.zip Backend/index-photos-lambda.py
-      - zip -g search_photo.zip Backend/find-photo-album-lambda.py.py
+      - zip -g search_photo.zip Backend/find-photo-album-lambda.py
       - zip -g lex_photo.zip Backend/search-photos-lambda/lambda_function.py
   post_build:
     commands:
