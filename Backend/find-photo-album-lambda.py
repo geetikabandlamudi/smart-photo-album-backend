@@ -23,6 +23,7 @@ def get_parsed_data(query):
     #     userId=user_id,
     #     inputText=input_text
     # )
+    # New Line
     parsed_data = response['messages'][0]['content']
     return parsed_data
 
