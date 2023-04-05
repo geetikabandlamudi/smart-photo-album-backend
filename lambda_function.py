@@ -52,6 +52,7 @@ def create_client():
     host = 'https://search-photos-i2pm6nlhd5qlkcigtklk7qchk4.us-east-1.es.amazonaws.com'
     port = 443
     auth = ('admin', 'Admin1230!')
+    
 
     client = OpenSearch(
         hosts = [host],
