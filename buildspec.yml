@@ -3,13 +3,9 @@ phases:
       
   build:
     commands:      
-      - zip -g index-photos.zip Backend/index-photos-lambda.py
-      - zip -g search_photo.zip Backend/find-photo-album-lambda.py
-      - zip -g lex_photo.zip Backend/search-photos-lambda/lambda_function.py
+      - zip -g seach_photos.zip lambda_function.py
   post_build:
     commands:
       - echo "Updating lambda Function..."
-      - aws lambda update-function-code --function-name index-photos --zip-file fileb://index-photos.zip
-      - aws lambda update-function-code --function-name search-photos --zip-file fileb://search_photo.zip
-      - aws lambda update-function-code --function-name find-photo-album --zip-file fileb://lex_photo.zip
+      - aws lambda update-function-code --function-name search-photos --zip-file fileb://seach_photos.zip
       - echo "DONE!!"
