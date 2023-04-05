@@ -24,6 +24,7 @@ def get_parsed_data(query):
     #     inputText=input_text
     # )
     # New Line
+    # One more new line
     parsed_data = response['messages'][0]['content']
     return parsed_data
 
