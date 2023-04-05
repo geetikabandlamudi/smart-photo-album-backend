@@ -21,6 +21,7 @@ def get_labels(s3_bucket, s3_key):
     )
 
     labels = [label['Name'] for label in response['Labels']]
+    # Comment
     return labels
     
 def get_custom_labels(s3_bucket, s3_key):
