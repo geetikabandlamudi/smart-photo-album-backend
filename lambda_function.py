@@ -53,7 +53,7 @@ def create_client():
     port = 443
     auth = ('admin', 'Admin1230!')
     
-
+    # New Line
     client = OpenSearch(
         hosts = [host],
         http_auth = auth,
